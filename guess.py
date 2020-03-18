@@ -8,7 +8,7 @@ def startGame(answer, l, r):
     while True:
         try:
             guess = int(input(f'Enter number between {l} to {r}: '))
-            if guess>=1 and guess<11:
+            if guess>=l and guess<=r:
                 if(guess==answer):
                     print("You got it")
                     break
